@@ -1,14 +1,9 @@
-# views.py
 from rest_framework import generics
-from .models import Lesson, Test
-from .serializers import LessonSerializer, TestSerializer
+from .models import Lesson
+from .serializers import LessonSerializer
 
 
-class LessonListCreateView(generics.ListCreateAPIView):
+class LessonAPView(generics.ListAPIView):
     queryset = Lesson.objects.all()
     serializer_class = LessonSerializer
 
-
-class TestListCreateView(generics.ListCreateAPIView):
-    queryset = Test.objects.all()
-    serializer_class = TestSerializer
