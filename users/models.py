@@ -48,4 +48,4 @@ class ConfirmationCode(models.Model):
 
 from django.db import models
 
-# Create your models here.
+# Create your models here.https://github.com/aruuuuuuke/FINAL.git
